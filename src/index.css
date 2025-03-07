@@ -1,0 +1,15 @@
+/* Elimina márgenes y asegúrate de que el HTML y el body ocupen toda la pantalla */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Vidaloka", serif;
+}
+
+/* Configuración adicional para evitar bordes blancos */
+* {
+  box-sizing: border-box; /* Para asegurar que padding no desborde elementos */
+  font-family: "Vidaloka", serif;
+  font-style: normal;
+}

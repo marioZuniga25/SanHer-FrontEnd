@@ -1,0 +1,45 @@
+.home-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.home-text{
+    text-align: justify;
+    max-width: 50%;
+    height: 100%;
+}
+.home-text h1{
+    text-align: center;
+    justify-self: center;
+    font-size: 80px;
+    width: 80%;
+}
+
+.home-text h2{
+    text-align: center;
+    justify-self: center;
+    font-size: xx-large;
+    width: 70%;
+    color: white;
+    margin-top: -5%;
+}
+
+.home-text p{
+    font-size: x-large;
+    width: 80%;
+    justify-self: center;
+}
+
+.home-text p li{
+    width: 70%;
+    justify-self: center;
+    text-align: start;
+}
+
+
+.img1{
+    width: 700px;
+    height: auto;
+}

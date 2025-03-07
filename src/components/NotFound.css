@@ -1,0 +1,41 @@
+.container-nf {
+    background-color: black;
+    height: 100vh; /* Ocupar toda la altura */
+    width: 100vw; /* Ocupar todo el ancho */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.not-found {
+    text-align: center;
+    color: white; /* Para que el texto sea visible */
+    font-family: Arial, sans-serif;
+}
+
+.not-found h1 {
+    font-size: 6rem;
+    color: #f4a523;
+    margin: 0;
+}
+
+.not-found p {
+    font-size: 1.5rem;
+    color: #ccc;
+}
+
+.home-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+    background-color: #f4a523;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.home-link:hover {
+    background-color: #b47b1f;
+}

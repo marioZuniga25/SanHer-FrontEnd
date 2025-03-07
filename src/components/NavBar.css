@@ -1,0 +1,145 @@
+/* Contenedor principal */
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
+/* Barra de navegación */
+.nav-bar {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  height: 100px; /* Altura del NavBar */
+  position: fixed; /* Fija el NavBar en la parte superior */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Asegura que el NavBar esté encima del contenido */
+}
+
+/* Estilo para el ícono del menú */
+.icono-menu {
+  color: white;
+  margin-left: 1%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%; /* Centra el ícono verticalmente */
+  left: 20px;
+  padding: 2px;
+  transform: translateY(-50%); /* Ajuste para centrar el ícono */
+  border-radius: 15px;
+}
+
+.icono-menu:hover {
+  background-color: rgba(255, 255, 255, 0.342);
+}
+
+/* Barra lateral */
+.sidebar {
+  position: fixed;
+  top: 100px; /* Alineado con la parte inferior de la barra de navegación */
+  left: -350px; /* Inicialmente fuera de la vista */
+  width: 350px;
+  height: calc(100% - 100px); /* Asegura que la barra lateral tenga la altura restante */
+  background-color: #000000d5;
+  color: white;
+  transition: left 0.3s ease-in-out;
+  padding: 10px 0px;
+  text-align: center;
+  z-index: 1000; /* Asegúrate de que la barra lateral esté encima del contenido */
+}
+
+.sidebar.open {
+  left: 0; /* Muestra la barra lateral cuando está abierta */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar li {
+  padding: 10px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sidebar li:hover {
+  background-color: #f4a523;
+  scale: 0.97;
+  transition: 0.3s;
+}
+
+.opciones {
+  width: 35%;
+  position: absolute;
+  right: 0;
+}
+
+.logout{
+  bottom: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.opciones ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-evenly;
+  color: #f4a523;
+  font-size: 22px;
+  transition: color 0.5s ease; /* Transición suave para color */
+}
+
+.opciones ul li {
+  position: relative;
+  transition: transform 0.5s ease, color 0.5s ease; /* Transición de color y movimiento */
+}
+
+.opciones ul li:hover {
+  cursor: pointer;
+  color: white; /* Color al pasar el mouse */
+  transform: translateY(-20%); /* Desplazamiento hacia arriba */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #f4a523;
+  font-size: 22px;
+  transition: color 0.5s ease, transform 0.5s ease;
+}
+
+.nav-link:hover {
+  color: white;
+  transform: translateY(-20%);
+}
+
+/* Contenedor del contenido */
+.contenido {
+  background-color: #f4a523;
+  margin-top: 100px; 
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.logo-nav {
+  width: 100px; 
+  height: auto; 
+  margin-left: 5%; 
+}
+
+.icono-user{
+  margin-top: 60%;
+}
+
+.nombre{
+  color: #f4a523;
+}
+
+.correo{
+  font-weight: lighter;
+}
