@@ -43,9 +43,10 @@ export const Landing = () => {
                 <div className="opciones">
                     <ul>
                         <li><Link to="/landing/home" className="nav-link">Inicio</Link></li>
+                        <li><Link to="/landing/services" className="nav-link">Servicios</Link></li>
                         <li><Link to="/landing/about" className="nav-link">Sobre Nosotros</Link></li>
                         <li><Link to="/landing/contact" className="nav-link">Contacto</Link></li>
-                        <li><Link to="/landing/services" className="nav-link">Servicios</Link></li>
+                        
                     </ul>
                 </div>
 

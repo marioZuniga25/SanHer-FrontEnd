@@ -1,0 +1,54 @@
+.service-1, .service-2{
+    display: flex;
+    justify-content: space-evenly;
+    height: 50%;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.text1{
+    background-color: black;
+    color: #f4a523;
+    width: 40%;
+    border-radius: 30px;
+}
+
+.text1 h1{
+    text-align: center;
+    font-size: 45px;
+    font-weight: lighter;
+}
+
+.text1 p{
+    width: 80%;
+    justify-self: center;
+    text-align: justify;
+    font-size: larger;
+}
+
+
+
+.service-2{
+    background-color: black;
+    height: 50%;
+}
+
+.text2{
+    background-color: #f4a523;
+    color: black;
+    width: 40%;
+    border-radius: 30px;
+}
+
+.text2 h1{
+    text-align: center;
+    font-size: 45px;
+    font-weight: lighter;
+}
+
+.text2 p{
+    width: 80%;
+    justify-self: center;
+    text-align: justify;
+    font-size: larger;
+}
