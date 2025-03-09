@@ -1,0 +1,91 @@
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.calendar {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.days-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.day {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.day.empty {
+    background-color: #f9f9f9;
+    border: none;
+}
+
+.day.selected {
+    background-color: #007bff;
+    color: white;
+}
+
+.day.cupo-completo {
+    background-color: #ff6b6b; /* Rojo */
+    color: white;
+}
+
+.day.cupo-medio {
+    background-color: #ffa94d; /* Naranja */
+    color: white;
+}
+
+.day.libre {
+    background-color: #51cf66; /* Verde */
+    color: white;
+}
+
+.citas-panel {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.horario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.horario .ocupado {
+    color: #ff6b6b; /* Rojo */
+}
+
+.horario button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.horario button:hover {
+    background-color: #0056b3;
+}

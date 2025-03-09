@@ -13,7 +13,6 @@ export const App = () => {
           {/* Rutas protegidas */}
           <Route element={<ProtectedRoute />}>
             <Route path="/landing/*" element={<Landing />} />
-            
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>

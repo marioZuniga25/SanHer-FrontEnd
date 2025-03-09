@@ -9,6 +9,9 @@ import { Contact } from './Contact';
 import './NavBar.css';
 import { NotFound } from "./NotFound";
 import logo from '../img/logo Sanher.jpeg';
+import { Agendar } from "./Agendar";
+import { MisCitas } from "./MisCitas";
+import { Profile } from "./Profile";
 
 
 
@@ -54,9 +57,9 @@ export const Landing = () => {
                 <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
                     
                     <ul>
-                        <li>Agendar una cita</li>
-                        <li>Mis Citas</li>
-                        <li>Mi Perfil</li>
+                        <Link to="/landing/agendar" className="side-option"><li>Agendar una cita</li></Link>
+                        <Link to="/landing/miscitas" className="side-option"><li>Mis Citas</li></Link>
+                        <Link to="/landing/profile" className="side-option"><li>Mi Perfil</li></Link>
                     </ul>
 
                     <FaUserCircle size={150} className="icono-user"/>
@@ -74,8 +77,12 @@ export const Landing = () => {
                     <Route path="about" element={<About />} />
                     <Route path="contact" element={<Contact />} />
                     <Route path="services" element={<Services />} />
+                    <Route path="agendar" element={<Agendar />}/>
+                    <Route path="miscitas" element={<MisCitas />}/>
+                    <Route path="profile" element={<Profile />}/>
                     <Route path="/" element={<Home />} />
                     <Route path="/*" element={<NotFound />} />
+                    
                 </Routes>
             </div>
         </div>
