@@ -1,14 +1,25 @@
-.container {
+.container-agendar {
+    
     display: flex;
+    height: 90%;
     gap: 20px;
-    padding: 20px;
+    padding: 0px 50px;
+    justify-content: space-evenly;
+}
+
+.title{
+    text-align: center;
+    
 }
 
 .calendar {
-    width: 300px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
+    background-color: black;
+    color: white;
+    width: 40%;
+    height: 90%;
+    border: none;
+    padding: 20px;
+    border-radius: 15px;
 }
 
 .header {
@@ -25,7 +36,8 @@
 }
 
 .day {
-    padding: 10px;
+    padding: 5px;
+    height: 7vb;
     text-align: center;
     border: 1px solid #ccc;
     cursor: pointer;
@@ -88,4 +100,63 @@
 
 .horario button:hover {
     background-color: #0056b3;
+}
+
+.form-container{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container form{
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.form-container form input,
+.form-container form select{
+    font-size: 20px;
+    border-radius: 14px;
+    padding: 5px;
+}
+
+.form-container form input{
+    width: 70%;
+}
+.form-container label{
+    margin-bottom: 30px;
+    font-size: x-large;
+}
+
+.asunto{
+    width: 90%;
+    height: 100%;
+    resize: none;
+    margin-bottom: 10%;
+}
+
+.btn-agendar {
+    margin-top: 9%;
+    padding: 15px 5px;
+    font-size: large;
+    color: #ffa94d;
+    background-color: black;
+    border: none;
+    border-radius: 20px;
+    width: 50%;
+    align-self: center;
+    transition: 0.5s;
+}
+
+.btn-agendar:hover{
+    cursor: pointer;
+    background-color: rgb(20, 20, 20);
+    scale: 0.95;
+    transition: 0.5s;
 }

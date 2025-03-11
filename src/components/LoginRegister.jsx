@@ -115,6 +115,7 @@ const handleSubmitLogin = async (e) => {
       localStorage.setItem("correo", data.correo);
       localStorage.setItem("apellido1", data.apellido1);
       localStorage.setItem("apellido2", data.apellido2);
+      localStorage.setItem("idUsuario", data.idUsuario)
       
       alert("Inicio de sesión exitoso");
       
