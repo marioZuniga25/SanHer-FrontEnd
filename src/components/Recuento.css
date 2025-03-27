@@ -1,0 +1,129 @@
+.recuento-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 95%;
+}
+
+.users-list-contadores {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30%;
+}
+
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+
+.contador-card {
+    list-style: none;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    width: 80%;
+    font-size: x-large;
+    text-align: center;
+    border-radius: 29px;
+    transition: 0.3s;
+}
+
+.contador-card:hover {
+    background-color: rgb(58, 58, 58);
+    cursor: pointer;
+    scale: 1.1;
+    transition: 0.3s;
+}
+
+  
+  .citas-list {
+    margin-top: 20px;
+  }
+  
+  .cita-card {
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .cita-card p {
+    margin: 5px 0;
+  }
+  
+  /* Estados de citas */
+  .status-atendida {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .status-cancelada {
+    color: #dc3545;
+  }
+  
+  .status-pendiente {
+    color: #ffc107;
+  }
+  
+  .back-button {
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    margin-bottom: 15px;
+    padding: 5px;
+  }
+  
+  .back-button:hover {
+    text-decoration: underline;
+  }
+  
+  /* Contenedor principal */
+  .recuento-container {
+    display: flex;
+  }
+  
+  .chart-container {
+    flex: 1;
+    padding: 20px;
+  }
+
+
+.cita-card {
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-left: 4px solid;
+    transition: transform 0.2s;
+  }
+  
+  .cita-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  
+  .cita-card p strong:contains("Fecha")::after {
+    content: attr(data-diasemana);
+    margin-left: 5px;
+    color: #666;
+    font-weight: normal;
+  }
+  
+  /* Estilos para estados */
+  .status-pendiente { color: #FF9800; }
+  .status-atendida { color: #4CAF50; }
+  .status-cancelada { color: #F44336; }
+  
+  /* Bordes izquierdos por estado */
+  .cita-card[data-estatus="pendiente"] { border-left-color: #FF9800; }
+  .cita-card[data-estatus="atendida"] { border-left-color: #4CAF50; }
+  .cita-card[data-estatus="cancelada"] { border-left-color: #F44336; }

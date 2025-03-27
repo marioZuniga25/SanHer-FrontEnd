@@ -1,0 +1,73 @@
+.profile-container {
+    width: 100%;
+    height: 80%;
+    font-size: large;
+}
+
+.profile-form {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+}
+.profile-form form{
+    justify-content: space-evenly;
+}
+
+.profile-form form label{
+    height: 10%;
+    font-size: large;
+}
+
+.pswd-change-container label input,
+.profile-form form label input{
+    padding: 5px;
+    height: 10%;
+    font-size: large;
+    border-radius: 12px;
+    margin: 3px;
+    border: none;
+}
+
+.pswd-change-container {
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+.icono-user-profile {
+    justify-self: center;
+    color: black;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    justify-content: space-evenly;
+}
+
+
+.btn-edit-datos {
+    background-color: black;
+    color: #f4a523;
+    padding: 8px;
+    margin: 5px;
+    font-size: large;
+    border-radius: 10px;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-edit-datos:hover {
+    cursor: pointer;
+    scale: 0.95;
+    background-color: rgb(41, 41, 41);
+    transition: 0.3s;
+}

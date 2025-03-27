@@ -1,0 +1,230 @@
+/* Estilos generales */
+.title {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 24px;
+    color: black;
+    font-size: xx-large;
+}
+
+.container-miagenda {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly; 
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Estilos del calendario */
+.calendar {
+    width: 40%;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #000000;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.header button {
+    background-color: #007bff;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.header button:hover {
+    background-color: #0056b3;
+}
+
+.days-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.day {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.day.empty {
+    background-color: #f9f9f9;
+    border: none;
+}
+
+.day.libre {
+    background-color: #47c051;
+}
+
+.day.cupo-medio {
+    background-color: #ff9d00;
+}
+
+.day.cupo-completo {
+    background-color: #ff0026;
+    cursor: not-allowed;
+}
+
+.day.selected {
+    border: 2px solid #f4a523;
+}
+
+/* Estilos de la lista de citas */
+.citas-container {
+    width: 40%; 
+    height: 90%;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: white;
+}
+
+.citas-container h3{
+    text-align: center;
+}
+
+.citas-list {
+    margin-top: 10px;
+    
+}
+
+.citas-hoy {
+    text-align: center;
+    width: 30%;
+}
+.cita-card {
+    background-color: #f4a523; 
+    width: 90%; 
+    border-radius: 10px; 
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    justify-self: center;
+    margin-bottom: 15px; 
+    font-size: large;
+    transition: 0.3s;
+}
+
+.cita-card:hover {
+    scale: 0.97;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #ffb53d; 
+}
+
+.cita-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.nombre-cliente {
+    color: #333;
+}
+
+.detalle-texto {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+
+.cita-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cita-column {
+    flex: 1;
+    padding: 0 5px;
+}
+
+.asunto-cita {
+    margin-top: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.hora-container {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.reloj-icon {
+    margin-right: 5px;
+}
+
+.hora-cita {
+    color: #333;
+}
+
+.cita-card p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.cita-card strong {
+    color: black;
+}
+
+.cita-detalle {
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    z-index: 1000; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.botones-estatus {
+    margin-top: 10px;
+}
+
+.botones-estatus button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: medium;
+    transition: 0.3s;
+}
+
+.botones-estatus button:hover{
+   scale: 0.97;
+   transition: 0.3s;
+   background-color: #292929;
+}
+
+.close{
+    float: right;
+}
+
+.close:hover {
+    cursor: pointer;
+    color: #f4a523;
+}

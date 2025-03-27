@@ -2,7 +2,7 @@ import './Services.css';
 import img2 from '../img/img2.png';
 import img3 from '../img/img3.png';
 
-export const Services = () => {
+const Services = () => {
   return (
     <>
       <div className="service-1">
@@ -33,3 +33,4 @@ export const Services = () => {
     </>
   )
 }
+export default Services;

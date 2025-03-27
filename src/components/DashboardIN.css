@@ -1,0 +1,101 @@
+.dashboard-options{
+    display: flex;
+    width: 100%;
+    max-height: fit-content;
+    padding: 20px;
+    justify-content: space-evenly;
+}
+
+.d-option{
+    background-color: black;
+    max-width: 20%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 120px 50px;
+    border-radius: 35px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.d-option:hover{
+    transform: translateY(-3%);
+    transition: 0.3s;
+}
+
+.dashboard-container{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+}
+
+.analytics {
+    width: 70%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.analytics h2 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.charts-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+.citas-hoy{
+    text-align: center;
+    width: 30%;
+}
+
+
+.D-cita-card {
+    background-color: #ffffff; 
+    width: 90%; 
+    border-radius: 10px; 
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    justify-self: center;
+}
+
+.D-cita-card:hover {
+    cursor: pointer;
+    scale: 0.95;
+}
+
+.cita-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.D-detalle-texto {
+    font-size: 12px;
+    color: gray;
+}
+
+.asunto-cita {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.hora-container {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.reloj-icon {
+    margin-right: 5px;
+}
+

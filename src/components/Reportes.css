@@ -1,0 +1,203 @@
+.reportes-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+}
+
+.filtros-form {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    justify-content: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #000000;
+    color: #f7b130;
+    border: none;
+    font-size: large;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-end;
+    height: fit-content;
+    
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #464646;
+    scale: 1.1;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.reporte-container {
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.reporte-header {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.reporte-header h2 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.reporte-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.reporte-table th,
+.reporte-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.reporte-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.reporte-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+.estado-atendida {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.estado-cancelada {
+    color: #f44336;
+    font-weight: bold;
+}
+
+.estado-pendiente {
+    color: #FFC107;
+    font-weight: bold;
+}
+
+.print-button {
+    background-color: #000000;
+    
+    transition: 0.3s;
+}
+
+.print-button:hover {
+    background-color: #3f3f3f;
+    scale: 1.1;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* Estilos específicos para impresión */
+@media print {
+    /* Oculta elementos no deseados */
+    body * {
+        visibility: hidden;
+    }
+    
+    /* Muestra solo el contenedor del reporte */
+    .reportes-container,
+    .reportes-container * {
+        visibility: visible;
+    }
+    
+    /* Oculta específicamente el formulario de fechas */
+    .filtros-form,
+    .form-group,
+    .form-group label,
+    .form-group input {
+        display: none !important;
+        visibility: hidden !important;
+    }
+    
+    /* Posiciona el reporte en la parte superior */
+    .reportes-container {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* Estilos para el encabezado con logo */
+    .print-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .print-logo {
+        max-width: 50px !important;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    
+    /* Oculta el botón de imprimir */
+    .print-button {
+        display: none !important;
+    }
+    
+    /* Oculta el título principal */
+    h1 {
+        display: none !important;
+    }
+    
+    /* Mejora la tabla para impresión */
+    .reporte-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    .reporte-table th,
+    .reporte-table td {
+        padding: 8px;
+        border: 1px solid #ddd;
+    }
+}

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Agendar.css';
 
-export const Agendar = () => {
+const Agendar = () => {
     const [currentDate, setCurrentDate] = useState(new Date());
     const [selectedDate, setSelectedDate] = useState(null);
     const [horariosDisponibles, setHorariosDisponibles] = useState([]);
@@ -126,10 +126,24 @@ export const Agendar = () => {
         const startDay = firstDay.getDay();
         const days = [];
 
+        // Días de la semana (iniciales)
+        const diasSemana = ["S", "D", "L", "M", "M", "J", "V"];
+
+        // Agregar los días de la semana
+        diasSemana.forEach((dia, index) => {
+            days.push(
+                <div key={`dia-semana-${index}`} className="day dia-semana">
+                    {dia}
+                </div>
+            );
+        });
+
+        // Agregar días vacíos para alinear el primer día del mes
         for (let i = 0; i < startDay; i++) {
             days.push(<div key={`empty-${i}`} className="day empty"></div>);
         }
 
+        // Agregar los días del mes
         for (let day = 1; day <= daysInMonth; day++) {
             const dateKey = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
             const citasDelDia = citas[dateKey] || [];
@@ -163,10 +177,7 @@ export const Agendar = () => {
                     <div className="form-container">
                         <form onSubmit={handleSubmit}>
                             <label>Fecha Seleccionada: {selectedDate}</label>
-                            <label>
-                                Nombre:
-                                <input type="text" name="nombre" value={formData.nombre} onChange={handleInputChange} required />
-                            </label>
+                            
                             <label>
                                 Teléfono:
                                 <input type="number" name="telefono" value={formData.telefono} onChange={handleInputChange} required />
@@ -183,7 +194,7 @@ export const Agendar = () => {
                                 </select>
                             </label>
                             <label>Asunto: <br />
-                                <textarea name="Asunto" className='asunto'></textarea>
+                                <textarea name="asunto" className='asunto' value={formData.asunto} onChange={handleInputChange}></textarea>
                             </label>
                             <button type="submit" className='btn-agendar'>Agendar Cita</button>
                         </form>
@@ -193,3 +204,5 @@ export const Agendar = () => {
         </>
     );
 };
+
+export default Agendar;

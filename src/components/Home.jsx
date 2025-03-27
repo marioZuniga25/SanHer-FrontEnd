@@ -1,8 +1,8 @@
-import React from 'react'
+
 import './Home.css';
 import img1 from '../img/img1.png';
 
-export const Home = () => {
+const Home = () => {
   return (
     <>
 
@@ -26,3 +26,5 @@ export const Home = () => {
     </>
   )
 }
+
+export default Home;
